@@ -147,9 +147,11 @@ This project demonstrates:
 
 This project is created for educational purposes as part of a Parallel Programming course.
 
-## 👨‍💻 Author
+## 👨‍💻 Authors
 
-**Andrés Escobar**  
+**Andrés Solís**  
+**Alonso Flores**  
+**Joel García**
 Universidad - 7° Semestre  
 Programación Paralela - 2° Parcial
 
