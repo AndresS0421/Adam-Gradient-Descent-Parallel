@@ -152,7 +152,8 @@ This project is created for educational purposes as part of a Parallel Programmi
 **Andrés Solís**  
 **Alonso Flores**  
 **Joel García**
-Universidad - 7° Semestre  
+
+Universidad de Colima - 7° Semestre\
 Programación Paralela - 2° Parcial
 
 ---
