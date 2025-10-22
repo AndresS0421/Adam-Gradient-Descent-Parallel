@@ -2,23 +2,7 @@
 #define DATASET_HPP
 
 #include <cmath>
-#include <utility>
-
-// Himmelblau test function (for visualization)
-inline double himmelblau(double x, double y) {
-    return std::pow(x*x + y - 11, 2) + std::pow(x + y*y - 7, 2);
-}
-
-// Gradient of Himmelblau
-struct Gradient {
-    double dx, dy;
-};
-
-inline Gradient himmelblau_grad(double x, double y) {
-    double dx = 4*x*(x*x + y - 11) + 2*(x + y*y - 7);
-    double dy = 2*(x*x + y - 11) + 4*y*(x + y*y - 7);
-    return {dx, dy};
-}
+#include <vector>
 
 // High-dimensional objective function (Rosenbrock-like)
 inline double high_dim_objective(const std::vector<double>& params) {

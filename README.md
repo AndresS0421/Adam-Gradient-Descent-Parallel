@@ -24,7 +24,6 @@ The implementation uses a high-dimensional Rosenbrock-like objective function to
 ├── main.cpp              # Main program with timing experiments
 ├── optimizer.hpp         # Adam optimizer class definition
 ├── optimizer.cpp         # Adam optimizer implementation with OpenMP
-├── adam_parallel.hpp     # Parallel Adam optimizer for batch processing
 ├── dataset.hpp           # Objective functions and gradients
 ├── plot_results.py       # Python visualization script
 ├── results/              # Generated results directory

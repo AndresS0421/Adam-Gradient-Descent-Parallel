@@ -1,7 +1,7 @@
 method,lr,execution_time_ms
-Adam_Sequential,0.1,116
-Adam_Parallel,0.1,4
-Adam_Sequential,0.01,112
-Adam_Parallel,0.01,4
-Adam_Sequential,0.001,111
+Adam_Sequential,0.1,125
+Adam_Parallel,0.1,3
+Adam_Sequential,0.01,126
+Adam_Parallel,0.01,3
+Adam_Sequential,0.001,126
 Adam_Parallel,0.001,3

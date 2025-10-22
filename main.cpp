@@ -6,7 +6,6 @@
 #include <chrono>
 #include "dataset.hpp"
 #include "optimizer.hpp"
-#include "adam_parallel.hpp"
 
 int main() {
     mkdir("results", 0777);
