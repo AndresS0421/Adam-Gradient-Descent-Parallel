@@ -51,7 +51,7 @@ int main() {
                 std::vector<double> grad_vec = high_dim_grad(w);
                 
                 // Use truly sequential Adam step (no OpenMP)
-                opt.step_sequential(w, grad_vec, t);
+                opt.step(w, grad_vec, t);
                 
                 if (k == 0) {  // Only log first point to avoid too much data
                     log << "Adam_Sequential," << lr << "," << t << "," << w[0] << "," << w[1] << "," << high_dim_objective(w) << "\n";
@@ -85,7 +85,7 @@ int main() {
                 std::vector<double> grad_vec = high_dim_grad(all_points[k]);
                 
                 // Use sequential Adam step (parallelization is in the outer loop)
-                all_optimizers[k].step_sequential(all_points[k], grad_vec, t);
+                all_optimizers[k].step(all_points[k], grad_vec, t);
             }
             
             // Log first point only

@@ -19,15 +19,3 @@ void AdamOptimizer::step(std::vector<double> &w,
         w[j] -= alpha * m_hat / (std::sqrt(v_hat) + eps);
     }
 }
-
-void AdamOptimizer::step_sequential(std::vector<double> &w,
-                                   const std::vector<double> &grad, int t) {
-    const int d = w.size();
-    for (int j = 0; j < d; ++j) {
-        m[j] = beta1 * m[j] + (1 - beta1) * grad[j];
-        v[j] = beta2 * v[j] + (1 - beta2) * grad[j] * grad[j];
-        double m_hat = m[j] / (1 - std::pow(beta1, t));
-        double v_hat = v[j] / (1 - std::pow(beta2, t));
-        w[j] -= alpha * m_hat / (std::sqrt(v_hat) + eps);
-    }
-}
